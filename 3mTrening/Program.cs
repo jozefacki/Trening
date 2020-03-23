@@ -24,9 +24,7 @@ namespace _3mTrening
         static void Main(string[] args)
         {
 
-            Bryla b = new Bryla();
-            b.test = 4;
-            Console.WriteLine(b.test);
+ 
             //List<string> Listatekstu = new List<string>();
 
             //Listatekstu.Add("qwe");
