@@ -5,28 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _3mTrening
-{
-    class Bryla
-    {
-        int a;
-        int b;
-        int h;
-        public int test = 121;
-
-        int objetosc()
-        {
-            return a * b * h;
-        }
-
-    }
+{ 
     class Program
     {
         static void Main(string[] args)
         {
 
-            Bryla b = new Bryla();
-            b.test = 4;
-            Console.WriteLine(b.test);
+        Bryla nowabryla = new Bryla();
+        person imienazw = new person( "Tomuś" , "Jurkiewicz" );
+            Console.
+            //Bryla b = new Bryla();
+            //Bryla c = b;
+
+            //b.test = 4;
+
+            //Console.WriteLine(b.test);
+            //Console.WriteLine(c.test);
+            //int y = 10;
+            //int x = y;
+            //y++;
+            //Console.WriteLine(y);
+            //Console.WriteLine(x);
+
+
+
             //List<string> Listatekstu = new List<string>();
 
             //Listatekstu.Add("qwe");
