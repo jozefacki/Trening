@@ -17,6 +17,6 @@ namespace _3mTrening
             nazwisko = Józefacki;
 
         }
-        Console.
+        
     }
 }

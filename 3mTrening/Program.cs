@@ -11,9 +11,23 @@ namespace _3mTrening
         static void Main(string[] args)
         {
 
-        Bryla nowabryla = new Bryla();
-        person imienazw = new person( "Tomuś" , "Jurkiewicz" );
-            Console.
+            //Bryla nowabryla = new Bryla();
+            //person imienazw = new person( "Tomuś" , "Jurkiewicz" );
+
+            user newUser = new user("Kasia","Hoppe"); // konstruktor
+            user newUser3 = new user("Anita", "L", 25, true, "Srubowa", "51-000", "Wrocław");
+            int i = 12;
+            i = i + 10;
+
+            List<user> listaUzytkownikow = new List<user>();
+
+            for(int j = 0; j < 5; j++)
+            {
+                listaUzytkownikow.Add(new user("imie"+j.ToString(), "nazwisko"+j.ToString()));
+            }
+            user newUser2 = new user("Jarek", "G");
+
+
             //Bryla b = new Bryla();
             //Bryla c = b;
 
