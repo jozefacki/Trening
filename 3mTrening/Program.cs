@@ -11,21 +11,40 @@ namespace _3mTrening
         static void Main(string[] args)
         {
 
+            Kolekcje slownikkolekcji1 = new Kolekcje();
+            slownikkolekcji1.dodawaniedoslownika();
+            Console.WriteLine(slownikkolekcji1.iloscwslowniku());
+
+            slownikkolekcji1.wartoscpodkluczem("wyraz1");
+            slownikkolekcji1.wypiszslownik();
+
+            //Kolekcje kolekcj1 = new Kolekcje();
+            //int wielkosclisty = kolekcj1.iloscwliscie();
+
+            //Console.WriteLine(kolekcj1.iloscwliscie());
+
+            //kolekcj1.dodawanieelementudolisty("tekst1");
+            //Console.WriteLine(kolekcj1.iloscwliscie());
+            Console.ReadLine();
+
+
             //Bryla nowabryla = new Bryla();
             //person imienazw = new person( "Tomuś" , "Jurkiewicz" );
 
-            user newUser = new user("Kasia","Hoppe"); // konstruktor
-            user newUser3 = new user("Anita", "L", 25, true, "Srubowa", "51-000", "Wrocław");
-            int i = 12;
-            i = i + 10;
+            //user newUser = new user("Kasia","Hoppe"); // konstruktor
+            //user newUser3 = new user("Anita", "L", 25, true, "Srubowa", "51-000", "Wrocław");
+            //int i = 12;
+            //i = i + 10;
 
-            List<user> listaUzytkownikow = new List<user>();
+            //List<user> listaUzytkownikow = new List<user>();
 
-            for(int j = 0; j < 5; j++)
-            {
-                listaUzytkownikow.Add(new user("imie"+j.ToString(), "nazwisko"+j.ToString()));
-            }
-            user newUser2 = new user("Jarek", "G");
+            //for(int j = 0; j < 5; j++)
+            //{
+            //    listaUzytkownikow.Add(new user("imie"+j.ToString(), "nazwisko"+j.ToString()));
+            //}
+            //user newUser2 = new user("Jarek", "G");
+
+
 
 
             //Bryla b = new Bryla();
