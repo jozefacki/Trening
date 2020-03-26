@@ -1,31 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace _3mTrening
-{ 
+{
     class Program
     {
         static void Main(string[] args)
         {
 
-            Kolekcje slownikkolekcji1 = new Kolekcje();
-            slownikkolekcji1.dodawaniedoslownika();
-            Console.WriteLine(slownikkolekcji1.iloscwslowniku());
 
-            slownikkolekcji1.wartoscpodkluczem("wyraz1");
-            slownikkolekcji1.wypiszslownik();
+            StreamReader SR = File.OpenText("C:/errorLog.txt");
+            StringBuilder Dozaczytania = new StringBuilder();
+            Dozaczytania.AppendLine(SR.ReadToEnd());
 
-            //Kolekcje kolekcj1 = new Kolekcje();
-            //int wielkosclisty = kolekcj1.iloscwliscie();
-
-            //Console.WriteLine(kolekcj1.iloscwliscie());
-
-            //kolekcj1.dodawanieelementudolisty("tekst1");
-            //Console.WriteLine(kolekcj1.iloscwliscie());
-            Console.ReadLine();
+            Console.WriteLine(".");
+            
 
 
             //Bryla nowabryla = new Bryla();

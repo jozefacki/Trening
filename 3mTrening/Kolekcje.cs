@@ -36,13 +36,17 @@ namespace _3mTrening
         {
             return slownikkolekcji.Count();
         }
-        public void dodawaniedoslownika2(string z)
+        public void dodawaniedoslownika2(string klucz,int wartosc1)
         {
-            slownikkolekcji.Add(z,10);
-            if (slownikkolekcji.ContainsKey(z))
+            //slownikkolekcji.Add(z,10);
+            if (slownikkolekcji.ContainsKey(klucz))
             {
-               // slownikkolekcji[z];
+                slownikkolekcji[klucz] = wartosc1;
 
+            }
+            else
+            {
+                slownikkolekcji.Add(klucz, wartosc1);
             }
         }
         public void wartoscpodkluczem(string wyraz)
@@ -69,6 +73,22 @@ namespace _3mTrening
             }
         }
 
+        //Kolekcje slownikkolekcji1 = new Kolekcje();
+        //slownikkolekcji1.dodawaniedoslownika();
+        //Console.WriteLine(slownikkolekcji1.iloscwslowniku());
 
+        //slownikkolekcji1.wartoscpodkluczem("wyraz1");
+        //slownikkolekcji1.wypiszslownik();
+
+        //slownikkolekcji1.dodawaniedoslownika2("wyraz123",123);
+        //slownikkolekcji1.wypiszslownik();
+
+        //Kolekcje kolekcj1 = new Kolekcje();
+        //int wielkosclisty = kolekcj1.iloscwliscie();
+
+        //Console.WriteLine(kolekcj1.iloscwliscie());
+
+        //kolekcj1.dodawanieelementudolisty("tekst1");
+        //Console.WriteLine(kolekcj1.iloscwliscie());
     }
 }
