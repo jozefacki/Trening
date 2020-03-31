@@ -10,14 +10,42 @@ namespace _3mTrening
     {
         static void Main(string[] args)
         {
+            //var y = 0;
+            var b = true;
+            var s = "ala";
 
-            Kolekcje slownikkolekcji1 = new Kolekcje();
-            slownikkolekcji1.dodawaniedoslownika();
-            Console.WriteLine(slownikkolekcji1.iloscwslowniku());
+           
 
-            slownikkolekcji1.wartoscpodkluczem("wyraz1");
-            slownikkolekcji1.wypiszslownik();
+            //Kolekcje slownikkolekcji1 = new Kolekcje();
+            //slownikkolekcji1.dodawaniedoslownika();
+            //Console.WriteLine(slownikkolekcji1.iloscwslowniku());
 
+            //slownikkolekcji1.wartoscpodkluczem("wyraz1");
+            //slownikkolekcji1.wypiszslownik();
+      
+            List<int> Test = new List<int>();
+            List<int> Nowalista = new List<int>() {1,2,3,4,5,6,7,8,9,10};
+            //int i = Nowalista.First(x => x % 2 == 0);
+            //Console.WriteLine(i);
+            //var i = Nowalista.FindAll(x => x % 2 == 0);
+            //Console.WriteLine(i);
+            var i = Nowalista.Where(y => y > 5 && y < 8);
+            foreach ( var item in i )
+            {
+                Console.WriteLine(item);
+            }
+
+            List<string> sMiesiac = new List<string>() {"styczen", "luty", "marzec", "kwiecień", "maj", "czerwiec" };
+            //var test2 = sMiesiac.Where(z => z.StartsWith("m"));
+            var test2 = sMiesiac.FindAll(z => z.Contains("e"));
+            foreach (var item1 in test2)
+            {
+                Console.WriteLine(item1);
+            }
+
+
+
+            // => wyraznie lambda , List<int> Test; - deklaracja bez tworzenia obiektu i przypisania wartości.
             //Kolekcje kolekcj1 = new Kolekcje();
             //int wielkosclisty = kolekcj1.iloscwliscie();
 
