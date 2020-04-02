@@ -15,7 +15,7 @@ namespace _3mTrening
             var b = true;
             var s = "ala";
 
-           
+
 
             //Kolekcje slownikkolekcji1 = new Kolekcje();
             //slownikkolekcji1.dodawaniedoslownika();
@@ -23,37 +23,45 @@ namespace _3mTrening
 
             //slownikkolekcji1.wartoscpodkluczem("wyraz1");
             //slownikkolekcji1.wypiszslownik();
-      
-            List<int> Test = new List<int>();
-            List<int> Nowalista = new List<int>() {1,2,3,4,5,6,7,8,9,10};
-            //int i = Nowalista.First(x => x % 2 == 0);
-            //Console.WriteLine(i);
-            //var i = Nowalista.FindAll(x => x % 2 == 0);
-            //Console.WriteLine(i);
-            var i = Nowalista.Where(y => y > 5 && y < 8);
-            foreach ( var item in i )
-            {
-                Console.WriteLine(item);
-            }
 
-            List<string> sMiesiac = new List<string>() {"styczen", "luty", "marzec", "kwiecień", "maj", "czerwiec" };
-            //var test2 = sMiesiac.Where(z => z.StartsWith("m"));
-            var test2 = sMiesiac.FindAll(z => z.Contains("e"));
-            foreach (var item1 in test2)
-            {
-                Console.WriteLine(item1);
-            }
+            //List<int> Test = new List<int>();
+            //List<int> Nowalista = new List<int>() {1,2,3,4,5,6,7,8,9,10};
+            ////int i = Nowalista.First(x => x % 2 == 0);
+            ////Console.WriteLine(i);
+            ////var i = Nowalista.FindAll(x => x % 2 == 0);
+            ////Console.WriteLine(i);
+            //var i = Nowalista.Where(y => y > 5 && y < 8);
+            //foreach ( var item in i )
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-
-            StreamReader SR = File.OpenText("C:/errorLog.txt");
-            StringBuilder Dozaczytania = new StringBuilder();
-            Dozaczytania.AppendLine(SR.ReadToEnd());
-
-            Console.WriteLine(".");
-            
+            //List<string> sMiesiac = new List<string>() {"styczen", "luty", "marzec", "kwiecień", "maj", "czerwiec" };
+            ////var test2 = sMiesiac.Where(z => z.StartsWith("m"));
+            //var test2 = sMiesiac.FindAll(z => z.Contains("e"));
+            //foreach (var item1 in test2)
+            //{
+            //    Console.WriteLine(item1);
+            //}
 
 
-            //Bryla nowabryla = new Bryla();
+            //StreamReader SR = File.OpenText("C:/errorLog.txt");
+            //StringBuilder Dozaczytania = new StringBuilder();
+            //Dozaczytania.AppendLine(SR.ReadToEnd());
+
+            //Console.WriteLine(".");
+
+            userList lista = new userList();
+            user user1 = new user("Anita", "L", true);
+            user user2 = new user("Kasia", "H", true);
+            user user3 = new user("Jarek", "G", false);
+            lista.dodajUser(user1);
+            lista.dodajUser(user2);
+            lista.dodajUser(user3);
+
+            lista.zrocImionaA("A");
+
+            Bryla nowabryla = new Bryla();
             //person imienazw = new person( "Tomuś" , "Jurkiewicz" );
 
             //user newUser = new user("Kasia","Hoppe"); // konstruktor
