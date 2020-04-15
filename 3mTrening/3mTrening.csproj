@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bryla.cs" />
+    <Compile Include="interface.cs" />
     <Compile Include="Kolekcje.cs" />
     <Compile Include="person.cs" />
     <Compile Include="Program.cs" />
