@@ -33,7 +33,7 @@ namespace MVCProject.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult Edit(int a)
+        public IActionResult Edit(string aaledluganazwa)
         {
             return View();
         }
