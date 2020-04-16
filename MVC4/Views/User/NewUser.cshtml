@@ -1,0 +1,15 @@
+﻿@model MVC4.Models.UserViewModel 
+
+@{
+    ViewBag.Title = "NewUser"; 
+}
+
+<h2>NewUser</h2>
+@using (Html.BeginForm("NewUser", "User", FormMethod.Post))
+{
+    @Html.TextBoxFor( x=> x.FirstName )
+    @Html.TextBoxFor( x=> x.LastName )
+    @Html.TextBoxFor( x=> x.Gender)
+    <input type="submit" value="Shave" />
+}
+
