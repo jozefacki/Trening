@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MVC4.Models;
 
 namespace MVC4.Controllers
 {
@@ -24,6 +25,20 @@ namespace MVC4.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Test()
+        {
+            var db = new UserContext();
+            db.Users.Add(new UserViewModel
+            {
+                FirstName = "Kasia",
+                LastName = "Hoppe",
+                Gender = true
+            });
+            db.SaveChanges();
+            
             return View();
         }
     }
