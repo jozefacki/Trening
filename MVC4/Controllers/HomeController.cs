@@ -30,14 +30,16 @@ namespace MVC4.Controllers
 
         public ActionResult Test()
         {
-            var db = new UserContext();
-            db.Users.Add(new UserViewModel
+            using (var db = new UserContext())
             {
-                FirstName = "Kasia",
-                LastName = "Hoppe",
-                Gender = true
-            });
-            db.SaveChanges();
+                db.Users.Add(new UserViewModel
+                {
+                    FirstName = "Kasia",
+                    LastName = "Hoppe",
+                    Gender = true
+                });
+            }
+            //db.SaveChanges();
             
             return View();
         }
