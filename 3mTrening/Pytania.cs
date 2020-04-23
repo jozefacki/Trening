@@ -21,8 +21,11 @@ namespace _3mTrening
         //CRUD (create, remove, update, delete)
         //SOLID 
         //Dependency injection
-
-
+        //POST, PUT, GET ?
+        //Czym jest sesja i czym są ciasteczka?
+        //TDD
+        //Czym się rózni ref od out ?
+        //Statusy 200, 400,404, 500 ? ( jest ich więcej doczytać)
 
 
         //CIekawosti:
