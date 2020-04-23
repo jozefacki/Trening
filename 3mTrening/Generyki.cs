@@ -23,12 +23,12 @@ namespace _3mTrening
             return e + f;
         }
 
-        public <T> SumaGeneryczna (<T> e, <T> f)
-        {
-            return e + f;
-        }
+        //public <T> SumaGeneryczna (<T> e, <T> f)
+        //{
+        //    return e + f;
+        //}
 
-        List<T> ListaGeneryczna = new List<T>();
+        //List<T> ListaGeneryczna = new List<T>();
 
     }
 }

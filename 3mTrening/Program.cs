@@ -241,5 +241,7 @@ namespace _3mTrening
         {
             return Listatekstu.IndexOf(a);
         }
+
+
     }
 }
