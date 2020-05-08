@@ -16,6 +16,7 @@ namespace _3mTrening
         string ulica;
         string kod;
         string miejscowosc;
+        
 
         public user (string imie1, string nazwisko1, bool plec)
         {

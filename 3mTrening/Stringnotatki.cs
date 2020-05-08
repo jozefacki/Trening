@@ -20,6 +20,7 @@ namespace _3mTrening
             teskstringbuildera.Append("kota");
             Console.WriteLine(ala);
             Console.WriteLine(teskstringbuildera);
+            
         }
     }
 }

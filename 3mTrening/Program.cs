@@ -192,6 +192,8 @@ namespace _3mTrening
 
             //Console.WriteLine(srednia);
 
+            int wynik = Dodawanie(2, 3);
+
             Console.ReadKey();
         }
         public static void MetodaTreningowa(int suma)
