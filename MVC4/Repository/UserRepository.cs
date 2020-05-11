@@ -15,5 +15,10 @@ namespace MVC4.Repository
         {
             return db.Users.ToList().FindAll(x => x.FirstName.StartsWith("K"));
         }
+
+        public int IloscWierszyWtabeli()
+        {
+            return db.Users.Count();
+        }
     }
 }
