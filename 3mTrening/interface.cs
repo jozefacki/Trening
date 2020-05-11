@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3mTrening
 {
-    class Naszinterface : Inowyinterface
+    public class Naszinterface : Inowyinterface
     {
         public int dodawanieczegos(int a, int b)
         {
@@ -17,7 +17,7 @@ namespace _3mTrening
             return a - b;
         }
     }
-    interface Inowyinterface
+    public interface Inowyinterface
     {
         int dodawanieczegos(int a, int b);
 
