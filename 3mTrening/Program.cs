@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace _3mTrening
 {
-    class Program
+    public class Program
     {
+
+     
         static void Main(string[] args)
         {
             //var y = 0;
@@ -201,13 +203,13 @@ namespace _3mTrening
 
             Console.WriteLine(suma);
         }
-
-
         public static int Dodawanie(int x, int y)
         {
             return x + y;
 
         }
+
+
 
         public static bool Sprawdzenie(int x)
         {
