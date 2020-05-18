@@ -52,8 +52,13 @@
     <Compile Include="Bryla.cs" />
     <Compile Include="Generyki.cs" />
     <Compile Include="interface.cs" />
+    <Compile Include="Interfaces\IAddressInfo.cs" />
+    <Compile Include="Interfaces\ICartService.cs" />
+    <Compile Include="Interfaces\IPaymentService.cs" />
+    <Compile Include="Interfaces\IShipmentService.cs" />
     <Compile Include="Kolekcje.cs" />
     <Compile Include="person.cs" />
+    <Compile Include="ProductBusiness.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pytania.cs" />
@@ -67,6 +72,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

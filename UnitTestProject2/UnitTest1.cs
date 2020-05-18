@@ -41,6 +41,18 @@ namespace UnitTestProject2
             var resultdodawania = wynikdodawania.dodawanieczegos(2, 4);
             Assert.AreEqual(6, resultdodawania);
         }
+
+        [Test]
+        public void TestProductBusiness()
+        {
+
+            var mockDataAccess = new Mock<IProductDataAccess>();
+            mockDataAccess.Setup(m => m.CreateProduct(It.IsAny<Product>())).Returns(true);
+            var productBusiness = new ProductBusiness(mockDataAccess.Object);
+
+            Assert.IsTrue(expectedResult, wynikDodawania);
+
+        }
          
     }
 }

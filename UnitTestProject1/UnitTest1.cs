@@ -1,4 +1,7 @@
 ﻿using System;
+using _3mTrening;
+using _3mTrening.Interfaces;
+using Moq;
 using NUnit.Framework;
 
 namespace UnitTestProject1
@@ -11,11 +14,28 @@ namespace UnitTestProject1
         {
 
             int wynikDodawania = 2;
-                //.Dodawanie(2, 3);
+            //.Dodawanie(2, 3);
             int expectedResult = 5;
 
             Assert.AreEqual(expectedResult, wynikDodawania);
 
         }
+
+        [Test]
+        public void TestProductBusiness()
+        {
+            //Arrange
+            var mockDataAccess = new Mock<IProductDataAccess>();
+            mockDataAccess.Setup(m => m.CreateProduct(It.IsAny<Product>())).Returns(true);
+
+            //Act
+            var productBusiness = new ProductBusiness(mockDataAccess.Object);
+            var result = productBusiness.Something();
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+
+        }
+
+
     }
 }
