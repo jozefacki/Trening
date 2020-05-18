@@ -21,20 +21,7 @@ namespace UnitTestProject1
 
         }
 
-        [Test]
-        public void TestProductBusiness()
-        {
-            //Arrange
-            var mockDataAccess = new Mock<IProductDataAccess>();
-            mockDataAccess.Setup(m => m.CreateProduct(It.IsAny<Product>())).Returns(true);
 
-            //Act
-            var productBusiness = new ProductBusiness(mockDataAccess.Object);
-            var result = productBusiness.Something();
-            //Assert
-            Assert.AreEqual(expectedResult, result);
-
-        }
 
 
     }

@@ -4,23 +4,23 @@ namespace _3mTrening.Interfaces
 {
     public interface IAddressInfo
     {
-        public string Street { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string PostalCode { get; set; }
-        public string PhoneNumber { get; set; }
+        string Street { get; set; }
+        string Address { get; set; }
+        string City { get; set; }
+        string PostalCode { get; set; }
+        string PhoneNumber { get; set; }
     }
     public interface ICard
     {
-        public string CardNumber { get; set; }
-        public string Name { get; set; }
-        public DateTime ValidTo { get; set; }
+        string CardNumber { get; set; }
+        string Name { get; set; }
+        DateTime ValidTo { get; set; }
     }
 
     public interface CartItem
     {
-        public string ProductId { get; set; }
-        public int Quantity { get; set; }
-        public double Price { get; set; }
+        string ProductId { get; set; }
+        int Quantity { get; set; }
+        double Price { get; set; }
     }
 }

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="Moq" Version="4.14.1" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
@@ -17,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\3mTrening\3mTrening.csproj" />
+    <ProjectReference Include="..\MVC4\MVC4.csproj" />
   </ItemGroup>
 
 </Project>

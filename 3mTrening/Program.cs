@@ -14,8 +14,7 @@ namespace _3mTrening
         static void Main(string[] args)
         {
             //var y = 0;
-            var b = true;
-            var s = "ala";
+
 
 
 

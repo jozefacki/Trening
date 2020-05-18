@@ -1,10 +1,6 @@
 ﻿using _3mTrening.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
 
 namespace MVC4
 {
@@ -21,7 +17,7 @@ namespace MVC4
             _shipmentService = shipmentService;
         }
 
-        [HttpPost]
+        [System.Web.Http.HttpPost]
         public string CheckOut(ICard card, IAddressInfo addressInfo)
         {
             var result = _paymentService.Charge(_cartService.Total(), card);
